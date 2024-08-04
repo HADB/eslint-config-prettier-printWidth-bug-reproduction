@@ -1,13 +1,9 @@
-import antfu from '@antfu/eslint-config';
-import withNuxt from './.nuxt/eslint.config.mjs';
+import antfu from '@antfu/eslint-config'
 
-export default withNuxt(
-  antfu({
-    lessOpinionated: true,
-    rules: {},
-    formatters: {
-      css: true,
-      html: true,
-    },
-  })
-);
+export default antfu({
+  lessOpinionated: true,
+  formatters: {
+    css: true,
+    html: true,
+  },
+})
